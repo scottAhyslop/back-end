@@ -17,6 +17,7 @@ namespace back_end
 {
     public class Startup
     {
+        readonly string AllowedSpecificOrigins = "_allowedSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -28,10 +29,19 @@ namespace back_end
         public void ConfigureServices(IServiceCollection services)
         {
             //Enable CORS
-            services.AddCors(c =>
-            {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
-            });
+            services.AddCors(options =>
+           {
+               options.AddPolicy(name: AllowedSpecificOrigins,
+                   builder =>
+                   {
+                       builder.WithOrigins(
+                           "http://localhost:4200"
+                           );
+                   });
+
+           });
+            services.AddControllers();
+            
 
             //JSON Serializer
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
@@ -53,27 +63,27 @@ namespace back_end
             {
                 app.UseDeveloperExceptionPage();
             }
-            //Enable CORS
-            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
-            app.UseRouting();
-
-            app.UseAuthentication();
-
-            app.UseAuthorization();
-
-            
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-
+            app.UseHttpsRedirection();
 
             app.UseStaticFiles(new StaticFileOptions
             {
                 FileProvider = new PhysicalFileProvider(
                    Path.Combine(Directory.GetCurrentDirectory(), "Photos")),
                 RequestPath = "/Photos"
+            });
+            app.UseRouting();
+            
+            //Enable CORS
+            app.UseCors(AllowedSpecificOrigins);
+
+            app.UseAuthorization();
+
+            app.UseAuthentication();
+
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllers();
             });
         }
     }

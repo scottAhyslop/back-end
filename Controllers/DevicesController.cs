@@ -16,24 +16,17 @@ namespace back_end.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DepartmentController : ControllerBase
+    public class DevicesController : ControllerBase
     {
 
         private readonly IConfiguration _configuration;
         private readonly IWebHostEnvironment _env;
-        public DepartmentController(IConfiguration configuration, IWebHostEnvironment env)
+        public DevicesController(IConfiguration configuration, IWebHostEnvironment env)
         {
             _configuration = configuration;
             _env = env;
         }
-
-        
-
-        //These dictionary collections will be used to display information on the device-list bootstrap rows and creation and display of a since device, they will be tied into the device as soon as it's created, so the device will always carry these names and icon items with it
-      
-
-
-
+        //to show a list of all devices
         [HttpGet]
         public JsonResult Get()
         {
@@ -57,8 +50,9 @@ namespace back_end.Controllers
                 }
             }
             return new JsonResult("success");
-        }
+        }//end Get
 
+        //for updating values in Device
         [HttpPost]
         public JsonResult Post(Device dev)
         {
@@ -84,9 +78,9 @@ namespace back_end.Controllers
             }
 
             return new JsonResult(table);
-        }
+        }//end Post
 
-
+        //For updating the device
         [HttpPut]
         public JsonResult Put(Device dev)
         {
@@ -115,6 +109,7 @@ namespace back_end.Controllers
             return new JsonResult("Updated Successfully");
         }
 
+        //takes DeviceId for deletion
         [HttpDelete("{id}")]
         public JsonResult Delete(int id)
         {
@@ -166,6 +161,6 @@ namespace back_end.Controllers
 
                 return new JsonResult("anonymous.png");
             }
-        }
+        }//end SaveFile
     }//end controller
 }//end namespace

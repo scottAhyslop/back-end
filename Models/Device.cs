@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+
 
 namespace back_end.Models
 {
@@ -17,7 +17,7 @@ namespace back_end.Models
                     _deviceId=value;
                 } else if(value==0)
                 {
-                     throw new NullReferenceException("Id was not created properly");;
+                     throw new NullReferenceException();
                 }
           }
          }
