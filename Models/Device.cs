@@ -15,7 +15,7 @@ namespace back_end.Models
         }
 
         //these values will be pulled from data to populate the device, all values can be null, except for DeviceId which is created upon instantiation, and temp which will be wired to the device
-        public Device(string deviceName, float temp, string deviceIconPath, string deviceOSIconPath, string deviceOS, string deviceType, string deviceStatus, TimeSpan timeInUse)
+        public Device(string deviceName, float temp, List<string> deviceIconPath, List<string> deviceOSIconPath, string deviceOS, string deviceType, string deviceStatus, TimeSpan timeInUse)
         {
             //create a new DeviceId
             this.DeviceId = System.Threading.Interlocked.Increment(ref deviceIdIncrementer);
@@ -30,13 +30,13 @@ namespace back_end.Models
             //These fields will be chosen by the user in AddDevice
             //Drop-down menus in forms that will show icons co-relating to the OSs and Devices chosen
             //The icons, devices, and OSs currently can be populated into dictionaries by methods found in the DeviceController
-            //DeviceIconPath = deviceIconPath;
+            DeviceIconPath = deviceIconPath;
             DeviceOSIconPath = deviceOSIconPath;
-            DeviceOS = deviceOS;
-            DeviceType = deviceType;
+            //DeviceOS = deviceOS;
+            //DeviceType = deviceType;
 
             //a general health of the machine check, assuming that there is an active routine montioring 'health' params and that this app would have access to that, in the meantime, it's a string
-            DeviceStatus = deviceStatus;
+            //DeviceStatus = deviceStatus;
         }
 
        public int DeviceId { get; set; }
@@ -47,7 +47,12 @@ namespace back_end.Models
         public string? DeviceStatus { get; set; }
         public TimeSpan TimeInUse { get; set; }
         public List<string> DeviceIconPath = new List<string>();
-        public string? DeviceOSIconPath { get; set; }
+        public List<string> DeviceOSIconPath = new List<string>();
+
+        DeviceOSIcon newDeviceOSIcon = new DeviceOSIcon();
+        
 
     }
+        
+
 }
