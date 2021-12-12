@@ -32,10 +32,10 @@ namespace back_end.Controllers
         {
             string query = @"
                             select DeviceId, DeviceName from
-                            dbo.Devices
+                            Devices
                             ";
 
-            DataTable table = new DataTable();
+            DataTable table = new();
             string sqlDataSource = _configuration.GetConnectionString("DeviceConn");
             SqlDataReader deviceReader;
             using (SqlConnection devconn = new SqlConnection(sqlDataSource))
@@ -49,7 +49,7 @@ namespace back_end.Controllers
                     devconn.Close();
                 }
             }
-            return new JsonResult("success");
+            return new JsonResult(table);
         }//end Get
 
         //for updating values in Device

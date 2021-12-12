@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -75,7 +76,7 @@ namespace back_end
             app.UseRouting();
             
             //Enable CORS
-            app.UseCors(AllowedSpecificOrigins);
+            app.UseCors();
 
             app.UseAuthorization();
 
@@ -84,65 +85,16 @@ namespace back_end
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapGet("/echo",
+                context => context.Response.WriteAsync("echo"))
+                .RequireCors(AllowedSpecificOrigins);
+
+                endpoints.MapControllers()
+                     .RequireCors(AllowedSpecificOrigins);
+
+                endpoints.MapGet("/echo2",
+                    context => context.Response.WriteAsync("echo2"));
             });
         }
     }
 }
-
-/*
- using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Newtonsoft.Json.Serialization;
-using Microsoft.Extensions.FileProviders;
-using System.IO;
-
-namespace WebApplication1
-{
-    public class Startup
-    {
-        
-
-        public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
-        {
-           
-
-
-           
-        }
-
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
-        {
-            
-
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
-
-        }
-    }
-}
-
- */
