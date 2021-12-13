@@ -31,9 +31,8 @@ namespace back_end.Controllers
         public JsonResult Get()
         {
             string query = @"
-                            select DeviceId, DeviceName from
-                            Devices
-                            ";
+                            select DeviceId, DeviceName, Temperature, DeviceIconPath, DeviceOSIconPath, DeviceType, DeviceOS, DeviceStatus, TimeInUse from Devices 
+                  ";
 
             DataTable table = new();
             string sqlDataSource = _configuration.GetConnectionString("DeviceConn");
@@ -56,10 +55,10 @@ namespace back_end.Controllers
         [HttpPost]
         public JsonResult Post(Device dev)
         {
+            //dev.DeviceType += dev.DeviceType.ToList<Device>();
             string query = @"
                            insert into dbo.Device
-                           values (@DeviceName)
-                            ";
+                           values (@DeviceName)";
 
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("DeviceConn");
@@ -67,10 +66,12 @@ namespace back_end.Controllers
             using (SqlConnection devcon = new SqlConnection(sqlDataSource))
             {
                 devcon.Open();
-                using (SqlCommand myCommand = new SqlCommand(query, devcon))
+                using (SqlCommand devComm = new SqlCommand(query, devcon))
                 {
-                    myCommand.Parameters.AddWithValue("@DeviceName", dev.DeviceName);
-                    deviceReader = myCommand.ExecuteReader();
+                    devComm.Parameters.AddWithValue("@DeviceName", dev.DeviceName);
+                    devComm.Parameters.AddWithValue("@DeviceType", dev.DeviceType);
+                    devComm.Parameters.AddWithValue("@DeviceOS", dev.DeviceOS);
+                    deviceReader = devComm.ExecuteReader();
                     table.Load(deviceReader);
                     deviceReader.Close();
                     devcon.Close();
