@@ -9,7 +9,7 @@ using back_end.Models;
 
 namespace back_end.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Devices")]
     [ApiController]
     public class DevicesController : ControllerBase
     {
@@ -80,7 +80,7 @@ namespace back_end.Controllers
             _context.Devices.Add(device);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetDevice", new { id = device.DeviceId }, device);
+            return CreatedAtAction(nameof(Device), new { id = device.DeviceId }, device);
         }
 
         // DELETE: api/DevicesControllerEF/5

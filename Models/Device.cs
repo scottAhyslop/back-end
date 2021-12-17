@@ -68,6 +68,7 @@ namespace back_end.Models
         public string DeviceOS { get; set; }
         
         public string DeviceStatus { get; set; }
+        public string AdminEyesOnly { get; set; } 
         public TimeSpan? TimeInUse { get; set; }
         public List<string> DeviceIconPath = new List<string>();
         public List<string> DeviceOSIconPath = new List<string>();
