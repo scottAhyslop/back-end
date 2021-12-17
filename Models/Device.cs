@@ -9,7 +9,7 @@ namespace back_end.Models
         private int _deviceId;
         //DeviceId incrementer holder value
         private static int deviceIdIncrementer = 0;
-        //DeviceID auto generated upon creation
+       //DeviceID auto generated upon creation
         public int DeviceId 
         { get {return _deviceId;}
           set { if (value!=0)

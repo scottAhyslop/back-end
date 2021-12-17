@@ -13,6 +13,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
+using back_end.Models;
 
 namespace back_end
 {
@@ -41,20 +43,19 @@ namespace back_end
                    });
 
            });
-            services.AddControllers();
-            
-
+           
             //JSON Serializer
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
             options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
                 .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
                 = new DefaultContractResolver());
 
-            //services.UseEndpoints(IApplicationBuilder, Action<IEndpointConventionBuilder>);
-            
             services.AddAuthentication();
             services.AddRouting();
             services.AddControllers();
+
+            services.AddDbContext<BackEndContext>(opt =>opt.UseInMemoryDatabase("Devices"));
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

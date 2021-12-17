@@ -1,16 +1,11 @@
-﻿using back_end.Models;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
-using System.IO;
 using System.Linq;
-using System.Collections.Immutable;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using back_end.Models;
 
 namespace back_end.Controllers
 {
@@ -18,150 +13,95 @@ namespace back_end.Controllers
     [ApiController]
     public class DevicesController : ControllerBase
     {
+        private readonly BackEndContext _context;
 
-        private readonly IConfiguration _configuration;
-        private readonly IWebHostEnvironment _env;
-        public DevicesController(IConfiguration configuration, IWebHostEnvironment env)
+        public DevicesController(BackEndContext context)
         {
-            _configuration = configuration;
-            _env = env;
+            _context = context;
         }
-        //to show a list of all devices
+
+        // GET: api/DevicesController
         [HttpGet]
-        public JsonResult Get()
+        public async Task<ActionResult<IEnumerable<Device>>> GetDevices()
         {
-            string query = @"
-                            select DeviceId, DeviceName, Temperature, DeviceIconPath, DeviceOSIconPath, DeviceType, DeviceOS, DeviceStatus, TimeInUse from Devices 
-                  ";
-
-            DataTable table = new();
-            string sqlDataSource = _configuration.GetConnectionString("DeviceConn");
-            SqlDataReader deviceReader;
-            using (SqlConnection devconn = new SqlConnection(sqlDataSource))
-            {
-                devconn.Open();
-                using (SqlCommand dbcom = new SqlCommand(query, devconn))
-                {
-                    deviceReader = dbcom.ExecuteReader();
-                    table.Load(deviceReader);
-                    deviceReader.Close();
-                    devconn.Close();
-                }
-            }
-            return new JsonResult(table);
-        }//end Get
-
-        //for updating values in Device
-        [HttpPost]
-        public JsonResult Post(Device dev)
-        {
-            //dev.DeviceType += dev.DeviceType.ToList<Device>();
-            string query = @"
-                           insert into dbo.Device
-                           values (@DeviceName)";
-
-            DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("DeviceConn");
-            SqlDataReader deviceReader;
-            using (SqlConnection devcon = new SqlConnection(sqlDataSource))
-            {
-                devcon.Open();
-                using (SqlCommand devComm = new SqlCommand(query, devcon))
-                {
-                    devComm.Parameters.AddWithValue("@DeviceName", dev.DeviceName);
-                    devComm.Parameters.AddWithValue("@DeviceType", dev.DeviceType);
-                    devComm.Parameters.AddWithValue("@DeviceOS", dev.DeviceOS);
-                    deviceReader = devComm.ExecuteReader();
-                    table.Load(deviceReader);
-                    deviceReader.Close();
-                    devcon.Close();
-                }
-            }
-
-            return new JsonResult(table);
-        }//end Post
-
-        //For updating the device
-        [HttpPut]
-        public JsonResult Put(Device dev)
-        {
-            string query = @"
-                           update dbo.Device
-                           set DeviceName=@DeviceName
-                            where DeviceId=@DeviceId
-                            ";
-
-            DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("DeviceConn");
-            SqlDataReader devReader;
-            using (SqlConnection devconn= new SqlConnection(sqlDataSource))
-            {
-                devconn.Open();
-                using (SqlCommand dbCom = new SqlCommand(query, devconn))
-                {
-                    dbCom.Parameters.AddWithValue("@DeviceId", dev.DeviceId);
-                    dbCom.Parameters.AddWithValue("@DeviceName", dev.DeviceName);
-                    devReader = dbCom.ExecuteReader();
-                    table.Load(devReader);
-                    devReader.Close();
-                    devconn.Close();
-                }
-            }
-            return new JsonResult("Updated Successfully");
+            return await _context.Devices.ToListAsync();
         }
 
-        //takes DeviceId for deletion
-        [HttpDelete("{id}")]
-        public JsonResult Delete(int id)
+        // GET: api/DevicesControllerEF/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Device>> GetDevice(int id)
         {
-            string query = @"
-                           delete from dbo.Device
-                            where DeviceId=@DeviceId
-                            ";
+            var device = await _context.Devices.FindAsync(id);
 
-            DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("DeviceConn");
-            SqlDataReader deviceReader;
-            using (SqlConnection devconn = new SqlConnection(sqlDataSource))
+            if (device == null)
             {
-                devconn.Open();
-                using (SqlCommand myCommand = new SqlCommand(query, devconn))
-                {
-                    myCommand.Parameters.AddWithValue("@DeviceId", id);
-
-                    deviceReader = myCommand.ExecuteReader();
-                    table.Load(deviceReader);
-                    deviceReader.Close();
-                    deviceReader.Close();
-                }
+                return NotFound();
             }
-            return new JsonResult("Deleted Successfully");
-        }//end Delete
 
+            return device;
+        }
 
-        //for uploading pictures of the devices later
-        [Route("Save File")]
-        [HttpPost]
-        public JsonResult SaveFile()
+        // PUT: api/DevicesControllerEF/5
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutDevice(int id, Device device)
         {
+            if (id != device.DeviceId)
+            {
+                return BadRequest();
+            }
+
+            _context.Entry(device).State = EntityState.Modified;
+
             try
             {
-                var httpRequest = Request.Form;
-                var postedFile = httpRequest.Files[0];  
-                string filename = postedFile.FileName;
-                var physicalPath =  _env.ContentRootPath + "/Photos" + filename;
-
-                using(var stream = new FileStream(physicalPath, FileMode.Create))
-                {
-                    postedFile.CopyTo(stream);  
-                }
-                return new JsonResult(filename);
+                await _context.SaveChangesAsync();
             }
-            catch (System.Exception)
+            catch (DbUpdateConcurrencyException)
             {
-
-                return new JsonResult("anonymous.png");
+                if (!DeviceExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
             }
-        }//end SaveFile
-    }//end controller
-}//end namespace
+
+            return NoContent();
+        }
+
+        // POST: api/DevicesControllerEF
+        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [HttpPost]
+        public async Task<ActionResult<Device>> PostDevice(Device device)
+        {
+            _context.Devices.Add(device);
+            await _context.SaveChangesAsync();
+
+            return CreatedAtAction("GetDevice", new { id = device.DeviceId }, device);
+        }
+
+        // DELETE: api/DevicesControllerEF/5
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteDevice(int id)
+        {
+            var device = await _context.Devices.FindAsync(id);
+            if (device == null)
+            {
+                return NotFound();
+            }
+
+            _context.Devices.Remove(device);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
+        }
+
+        private bool DeviceExists(int id)
+        {
+            return _context.Devices.Any(e => e.DeviceId == id);
+        }
+    }
+}
