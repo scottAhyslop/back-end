@@ -1,0 +1,735 @@
+﻿++Solution 'back-end' ‎(1 of 1 project)
+i:{00000000-0000-0000-0000-000000000000}:back-end.sln
+++back-end
+i:{00000000-0000-0000-0000-000000000000}:back-end
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\back-end\
+++Connected Services 
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>382
+++Dependencies
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>381
+++Properties
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\properties\
+++launchSettings.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\properties\launchsettings.json
+++Controllers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\controllers\
+++DevicesController.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\controllers\devicescontroller.cs
+++JSONDevicesController.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\controllers\jsondevicescontroller.cs
+++WeatherForecastController.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\controllers\weatherforecastcontroller.cs
+++Models
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\models\
+++Device.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\models\device.cs
+++DeviceContext.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\models\devicecontext.cs
+++DeviceOSIcon.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\models\deviceosicon.cs
+++Photos
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\photos\
+++appsettings.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\appsettings.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\appsettings.json
+++Program.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\program.cs
+++Startup.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\startup.cs
+++WeatherForecast.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\weatherforecast.cs
+++No service dependencies discovered
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>383
+++Analyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:analyzers
+++Frameworks
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:frameworks
+++Packages
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:packages
+++appsettings.Development.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\appsettings.development.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\appsettings.development.json
+++Microsoft.AspNetCore.Analyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\.nuget\packages\microsoft.codeanalysis.analyzers\3.0.0\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.analyzers\5.0.13\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.AspNetCore.App
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\microsoft.aspnetcore.app
+++Microsoft.NETCore.App
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\microsoft.netcore.app
+++Microsoft.AspNetCore.Mvc.NewtonsoftJson (5.0.12)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>395
+++Microsoft.EntityFrameworkCore.Design (5.0.13)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>414
+++Microsoft.EntityFrameworkCore.InMemory (5.0.13)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>409
+++Microsoft.EntityFrameworkCore.SqlServer (5.0.12)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>415
+++Microsoft.EntityFrameworkCore.SqlServer.Design (1.1.6)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>676
+++Microsoft.EntityFrameworkCore.Tools (5.0.12)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>416
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (5.0.2)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>417
+++System.Data.SqlClient (4.8.3)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>396
+++System.Runtime (4.3.1)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>397
+++.vs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\
+++slnx.sqlite
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\slnx.sqlite
+++VSWorkspaceState.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\vsworkspacestate.json
+++config
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\back-end\config\
+++DesignTimeBuild
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\back-end\designtimebuild\
+++v17
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\back-end\v17\
+++project-colors.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\back-end\project-colors.json
+++applicationhost.config
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\back-end\config\applicationhost.config
+++.dtbcache.v2
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\back-end\designtimebuild\.dtbcache.v2
+++.futdcache.v1
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vs\back-end\v17\.futdcache.v1
+++.vscode
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vscode\
+++launch.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vscode\launch.json
+++tasks.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\.vscode\tasks.json
+++back-end.sln
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\back-end.sln
+++bin
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\
+++Debug
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\
+++Release
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\release\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\release\
+++net5.0
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\release\net5.0\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm\lib\net5.0\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm64\lib\net5.0\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\release\net5.0\
+++cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\cs\
+++de
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\de\
+++es
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\es\
+++fr
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\fr\
+++it
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\it\
+++ja
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ja\
+++ko
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ko\
+++pl
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pl\
+++pt-BR
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pt-br\
+++ref
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ref\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\release\net5.0\ref\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\ref\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\release\net5.0\ref\
+++ru
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ru\
+++runtimes
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\
+++tr
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\tr\
+++zh-Hans
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hans\
+++zh-Hant
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hant\
+++back-end.deps.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\back-end.deps.json
+++back-end.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\back-end.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ref\back-end.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\ref\back-end.dll
+++back-end.exe
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\back-end.exe
+++back-end.pdb
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\back-end.pdb
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.pdb
+++back-end.runtimeconfig.dev.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\back-end.runtimeconfig.dev.json
+++back-end.runtimeconfig.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\back-end.runtimeconfig.json
+++dotnet-aspnet-codegenerator-design.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\dotnet-aspnet-codegenerator-design.dll
+++Humanizer.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\humanizer.dll
+++Microsoft.AspNetCore.JsonPatch.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.aspnetcore.jsonpatch.dll
+++Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.aspnetcore.mvc.newtonsoftjson.dll
+++Microsoft.AspNetCore.Razor.Language.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.aspnetcore.razor.language.dll
+++Microsoft.Bcl.AsyncInterfaces.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.bcl.asyncinterfaces.dll
+++Microsoft.CodeAnalysis.CSharp.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.codeanalysis.csharp.dll
+++Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.codeanalysis.csharp.workspaces.dll
+++Microsoft.CodeAnalysis.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.codeanalysis.dll
+++Microsoft.CodeAnalysis.Razor.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.codeanalysis.razor.dll
+++Microsoft.CodeAnalysis.Workspaces.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.codeanalysis.workspaces.dll
+++Microsoft.Data.SqlClient.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.data.sqlclient.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\unix\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\lib\netcoreapp3.1\microsoft.data.sqlclient.dll
+++Microsoft.EntityFrameworkCore.Abstractions.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.entityframeworkcore.abstractions.dll
+++Microsoft.EntityFrameworkCore.Design.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.entityframeworkcore.design.dll
+++Microsoft.EntityFrameworkCore.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.entityframeworkcore.dll
+++Microsoft.EntityFrameworkCore.InMemory.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.entityframeworkcore.inmemory.dll
+++Microsoft.EntityFrameworkCore.Relational.Design.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.entityframeworkcore.relational.design.dll
+++Microsoft.EntityFrameworkCore.Relational.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.entityframeworkcore.relational.dll
+++Microsoft.EntityFrameworkCore.SqlServer.Design.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.entityframeworkcore.sqlserver.design.dll
+++Microsoft.EntityFrameworkCore.SqlServer.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.entityframeworkcore.sqlserver.dll
+++Microsoft.Extensions.DependencyInjection.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.extensions.dependencyinjection.dll
+++Microsoft.Identity.Client.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.identity.client.dll
+++Microsoft.IdentityModel.JsonWebTokens.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.identitymodel.jsonwebtokens.dll
+++Microsoft.IdentityModel.Logging.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.identitymodel.logging.dll
+++Microsoft.IdentityModel.Protocols.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.identitymodel.protocols.dll
+++Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.identitymodel.protocols.openidconnect.dll
+++Microsoft.IdentityModel.Tokens.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.identitymodel.tokens.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.visualstudio.web.codegeneration.contracts.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.visualstudio.web.codegeneration.core.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.visualstudio.web.codegeneration.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.visualstudio.web.codegeneration.entityframeworkcore.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.visualstudio.web.codegeneration.templating.dll
+++Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.visualstudio.web.codegeneration.utils.dll
+++Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoft.visualstudio.web.codegenerators.mvc.dll
+++MicrosoftWebDriver.exe
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\microsoftwebdriver.exe
+++Newtonsoft.Json.Bson.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\newtonsoft.json.bson.dll
+++Newtonsoft.Json.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\newtonsoft.json.dll
+++System.Composition.AttributedModel.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.composition.attributedmodel.dll
+++System.Composition.Convention.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.composition.convention.dll
+++System.Composition.Hosting.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.composition.hosting.dll
+++System.Composition.Runtime.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.composition.runtime.dll
+++System.Composition.TypedParts.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.composition.typedparts.dll
+++System.Configuration.ConfigurationManager.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.configuration.configurationmanager.dll
+++System.Data.SqlClient.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.data.sqlclient.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\unix\lib\netcoreapp2.1\system.data.sqlclient.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\lib\netcoreapp2.1\system.data.sqlclient.dll
+++System.Diagnostics.DiagnosticSource.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.diagnostics.diagnosticsource.dll
+++System.IdentityModel.Tokens.Jwt.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.identitymodel.tokens.jwt.dll
+++System.Runtime.Caching.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.runtime.caching.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\system.runtime.caching.dll
+++System.Security.Cryptography.ProtectedData.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\system.security.cryptography.protecteddata.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\system.security.cryptography.protecteddata.dll
+++Microsoft.CodeAnalysis.CSharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\cs\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\de\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\es\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\fr\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\it\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ja\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ko\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pl\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pt-br\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ru\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\tr\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hans\microsoft.codeanalysis.csharp.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hant\microsoft.codeanalysis.csharp.resources.dll
+++Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\cs\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\de\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\es\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\fr\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\it\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ja\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ko\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pl\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pt-br\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ru\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\tr\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hans\microsoft.codeanalysis.csharp.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hant\microsoft.codeanalysis.csharp.workspaces.resources.dll
+++Microsoft.CodeAnalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\cs\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\de\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\es\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\fr\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\it\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ja\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ko\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pl\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pt-br\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ru\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\tr\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hans\microsoft.codeanalysis.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hant\microsoft.codeanalysis.resources.dll
+++Microsoft.CodeAnalysis.Workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\cs\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\de\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\es\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\fr\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\it\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ja\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ko\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pl\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\pt-br\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\ru\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\tr\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hans\microsoft.codeanalysis.workspaces.resources.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\zh-hant\microsoft.codeanalysis.workspaces.resources.dll
+++unix
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\unix\
+++win
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\
+++win-arm
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm\
+++win-arm64
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm64\
+++win-x64
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x64\
+++win-x86
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x86\
+++lib
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\unix\lib\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\lib\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm\lib\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm64\lib\
+++native
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm\native\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm64\native\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x64\native\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x86\native\
+++netcoreapp2.1
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\unix\lib\netcoreapp2.1\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\lib\netcoreapp2.1\
+++netcoreapp3.1
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\unix\lib\netcoreapp3.1\
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\lib\netcoreapp3.1\
+++netstandard2.0
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win\lib\netstandard2.0\
+++Microsoft.Data.SqlClient.SNI.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.dll
+++Microsoft.Data.SqlClient.SNI.pdb
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm\native\microsoft.data.sqlclient.sni.pdb
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm64\native\microsoft.data.sqlclient.sni.pdb
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x64\native\microsoft.data.sqlclient.sni.pdb
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x86\native\microsoft.data.sqlclient.sni.pdb
+++sni.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm64\native\sni.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x64\native\sni.dll
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-x86\native\sni.dll
+++dotnet-aspnet-codegenerator-design.exe
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\bin\debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
+++obj
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\
+++back-end.csproj.nuget.dgspec.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\back-end.csproj.nuget.dgspec.json
+++back-end.csproj.nuget.g.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\back-end.csproj.nuget.g.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\back-end.csproj.nuget.g.props
+++back-end.csproj.nuget.g.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\back-end.csproj.nuget.g.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\back-end.csproj.nuget.g.targets
+++project.assets.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\project.assets.json
+++project.nuget.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\project.nuget.cache
+++staticwebassets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\staticwebassets\
+++.NETCoreApp,Version=v5.0.AssemblyAttributes.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\.netcoreapp,version=v5.0.assemblyattributes.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\release\net5.0\.netcoreapp,version=v5.0.assemblyattributes.cs
+++apphost.exe
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\apphost.exe
+++back-end.AssemblyInfo.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.assemblyinfo.cs
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\release\net5.0\back-end.assemblyinfo.cs
+++back-end.AssemblyInfoInputs.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.assemblyinfoinputs.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\release\net5.0\back-end.assemblyinfoinputs.cache
+++back-end.assets.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.assets.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\release\net5.0\back-end.assets.cache
+++back-end.csproj.AssemblyReference.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.csproj.assemblyreference.cache
+++back-end.csproj.CopyComplete
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.csproj.copycomplete
+++back-end.csproj.CoreCompileInputs.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.csproj.corecompileinputs.cache
+++back-end.csproj.FileListAbsolute.txt
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.csproj.filelistabsolute.txt
+++back-end.GeneratedMSBuildEditorConfig.editorconfig
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.generatedmsbuildeditorconfig.editorconfig
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\release\net5.0\back-end.generatedmsbuildeditorconfig.editorconfig
+++back-end.genruntimeconfig.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.genruntimeconfig.cache
+++back-end.MvcApplicationPartsAssemblyInfo.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.mvcapplicationpartsassemblyinfo.cache
+++back-end.RazorTargetAssemblyInfo.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\back-end.razortargetassemblyinfo.cache
+++project.razor.json
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\project.razor.json
+++back-end.StaticWebAssets.Manifest.cache
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\obj\debug\net5.0\staticwebassets\back-end.staticwebassets.manifest.cache
+++Imports
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:>683
+++Sdk.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\sdk\sdk.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\sdk\sdk.targets
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.props
+++Sdk.props (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\sdk\sdk.props
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\Sdk)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Razor\Sdk)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Web.ProjectSystem\Sdk)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\sdk\sdk.targets
+++Sdk.targets (C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk.Publish\Sdk)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\sdk\sdk.targets
+++Microsoft.Common.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Sdk.Razor.CurrentVersion.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.props
+++Microsoft.NET.Sdk.Web.ProjectSystem.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.props
+++Microsoft.NET.Sdk.Publish.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.props
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.NET.Sdk.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++Sdk.Razor.CurrentVersion.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\sdk.razor.currentversion.targets
+++Microsoft.NET.Sdk.Web.ProjectSystem.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.projectsystem.targets
+++Microsoft.NET.Sdk.Publish.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\microsoft.net.sdk.publish.targets
+++Microsoft.NuGet.ImportBefore.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++Sdk.Razor.StaticAssets.ProjectSystem.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\sdk\sdk.razor.staticassets.projectsystem.props
+++Microsoft.TypeScript.Default.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.default.props
+++Microsoft.NET.Sdk.Web.DefaultItems.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web.projectsystem\targets\microsoft.net.sdk.web.defaultitems.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.Razor.BeforeCommon.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.beforecommon.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.Managed.Before.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++Microsoft.NET.Sdk.Razor.Compilation.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.compilation.targets
+++Microsoft.NET.Sdk.Razor.Configuration.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.configuration.targets
+++Microsoft.NET.Sdk.Razor.CodeGeneration.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.codegeneration.targets
+++Microsoft.NET.Sdk.Razor.Component.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.component.targets
+++Microsoft.NET.Sdk.Razor.StaticWebAssets.5_0.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.staticwebassets.5_0.targets
+++Microsoft.NET.Sdk.Razor.ScopedCss.5_0.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.scopedcss.5_0.targets
+++Microsoft.NET.Sdk.Razor.GenerateAssemblyInfo.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.generateassemblyinfo.targets
+++Microsoft.NET.Sdk.Razor.MvcApplicationPartsDiscovery.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\targets\microsoft.net.sdk.razor.mvcapplicationpartsdiscovery.targets
+++Microsoft.NET.Sdk.Razor.DesignTime.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\razor\microsoft.net.sdk.razor.designtime.targets
+++Microsoft.TypeScript.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files (x86)\microsoft sdks\typescript\4.4\build\microsoft.typescript.targets
+++Microsoft.TypeScript.DotNetCore.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\typescript\microsoft.typescript.dotnetcore.targets
+++Microsoft.Web.Designtime.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.designtime.targets
+++Default.pubxml
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\publishprofiles\default.pubxml
+++Microsoft.NET.Sdk.Publish.ComputeFiles.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\computetargets\microsoft.net.sdk.publish.computefiles.targets
+++Microsoft.NET.Sdk.Publish.FilterFiles.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.filterfiles.targets
+++Microsoft.NET.Sdk.Publish.CopyFiles.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\copytargets\microsoft.net.sdk.publish.copyfiles.targets
+++Microsoft.NET.Sdk.Publish.TransformFiles.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\transformtargets\microsoft.net.sdk.publish.transformfiles.targets
+++Microsoft.NET.Sdk.Publish.FileSystem.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\publishtargets\microsoft.net.sdk.publish.filesystem.targets
+++Microsoft.NET.Sdk.DotNetCLITool.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.publish\targets\dotnetclitooltargets\microsoft.net.sdk.dotnetclitool.targets
+++Microsoft.EntityFrameworkCore.Design.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\.nuget\packages\microsoft.entityframeworkcore.design\5.0.13\build\netcoreapp3.0\microsoft.entityframeworkcore.design.props
+++Microsoft.NuGet.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain)
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk-manifests\6.0.100\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.CSharp.Core.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++04.03.05.00.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files (x86)\microsoft sdks\typescript\versions\04.03.05.00.props
+++04.04.04.00.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files (x86)\microsoft sdks\typescript\versions\04.04.04.00.props
+++Microsoft.NET.ILLink.Tasks.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Managed.Core.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++Microsoft.Cpp.VCLibs120Universal.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importbefore\microsoft.cpp.vclibs120universal.targets
+++Microsoft.Net.CoreRuntime.ImportBefore.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importbefore\microsoft.net.coreruntime.importbefore.targets
+++Microsoft.NetNative.ImportBefore.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importbefore\microsoft.netnative.importbefore.targets
+++back-end.csproj.user
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\users\user\documents\visual studio 2022\back-end\back-end\back-end.csproj.user
+++Microsoft.NET.props
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.DesktopBridge.ImportAfter.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.desktopbridge.importafter.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.Net.CoreRuntime.ImportAfter.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.coreruntime.importafter.targets
+++Microsoft.NetNative.ImportAfter.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.netnative.importafter.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.VisualStudio.Azure.Fabric.ServiceProject.ImportAfter.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.visualstudio.azure.fabric.serviceproject.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++Microsoft.DesktopBridge.Common.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\desktopbridge\microsoft.desktopbridge.common.targets
+++Microsoft.Docker.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
+++Microsoft.VisualStudio.Azure.Fabric.ServiceProject.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\service fabric tools\microsoft.visualstudio.azure.fabric.serviceproject.targets
+++Microsoft.Web.IISSupport.targets
+i:{74e4e938-c7d1-4bcd-a003-958c2fcd38cb}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed.web\microsoft.web.iissupport.targets
