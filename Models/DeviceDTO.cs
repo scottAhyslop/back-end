@@ -11,5 +11,8 @@ namespace back_end.Models
 
         public string DeviceStatus { get; set; }
         public TimeSpan? TimeInUse { get; set; }
+
+        public bool IsComplete { get; set; }
+
     }
 }

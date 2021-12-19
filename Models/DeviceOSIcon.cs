@@ -27,6 +27,8 @@ namespace back_end.Models
 
         }
 
+        
+
         //Icons and names for Device
 
         //These dictionary collections will be used to display information on the device-list bootstrap rows and creation and display of a single device, they will be tied into the device as soon as it's created, so the device will always carry these names and icon items with it
