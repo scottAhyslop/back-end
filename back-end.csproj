@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="back-end.Tests\**" />
+    <Content Remove="back-end.Tests\**" />
+    <EmbeddedResource Remove="back-end.Tests\**" />
+    <None Remove="back-end.Tests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Controllers\TestData.cs" />
   </ItemGroup>
 

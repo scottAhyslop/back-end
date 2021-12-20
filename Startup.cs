@@ -26,13 +26,16 @@ namespace back_end
             Configuration = configuration;
         }
 
+       
+
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<BackEndContext>();
             //JSON Serializer
-            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+            //services.AddControllersWithViews().AddNewtonsoftJson(options =>
             //options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
             //    .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
             //    = new DefaultContractResolver());
@@ -49,14 +52,14 @@ namespace back_end
                            .AllowAnyMethod();
                     });
 
-            }));
+            });
 
 
             services.AddAuthentication();
             services.AddRouting();
             services.AddControllers();
 
-            services.AddDbContext<BackEndContext>(opt =>opt.UseInMemoryDatabase("Devices"));
+            //services.AddDbContext<BackEndContext>(opt =>opt.UseInMemoryDatabase("Devices"));
 
         }
 
