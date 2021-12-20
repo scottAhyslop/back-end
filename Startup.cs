@@ -37,10 +37,10 @@ namespace back_end
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             //JSON Serializer
-            //services.AddControllersWithViews().AddNewtonsoftJson(options =>
-            //options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
-            //    .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
-            //    = new DefaultContractResolver());
+            services.AddControllersWithViews().AddNewtonsoftJson(options =>
+            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
+                .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
+                = new DefaultContractResolver());
 
             //Enable CORS
             services.AddCors(options =>
@@ -63,9 +63,7 @@ namespace back_end
             services.AddControllers();
             services.AddMvcCore();
 
-            //services.AddDbContext<BackEndContext>(opt =>opt.UseInMemoryDatabase("Devices"));
-
-        }
+           }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

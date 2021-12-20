@@ -15,11 +15,7 @@ namespace back_end.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-           
-
-                options.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Integrated Security=True;");
-           
-        }
+            options.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Integrated Security=True;");        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -64,28 +60,5 @@ namespace back_end.Models
         }
     }
 
-    /*
-     public partial class DeviceContext : DbContext
-    {
-    public DeviceContext()
-    {
-    }
-
-    public DeviceContext(DbContextOptions<DeviceContext> options)
-        : base(options)
-    {
-    }
-    public virtual DbSet<Device> Devices { get; set; }
-
-    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    {
-        if (!optionsBuilder.IsConfigured)
-        {
-
-            optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Integrated Security=True;");
-        }
-    }
-     */
-
-
+    
 }

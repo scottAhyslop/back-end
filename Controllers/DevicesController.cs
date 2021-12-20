@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using back_end.Models;
 
 using Microsoft.AspNetCore.Cors;
+using System.Net;
 
 namespace back_end.Controllers
 {
@@ -16,24 +17,28 @@ namespace back_end.Controllers
     public class DevicesController : ControllerBase
     {
         private readonly DeviceContext _context;
-        private readonly WebApiConfigForCors _register;
-
-        public DevicesController(DeviceContext context, WebApiConfigForCors register)
+       
+        public DevicesController(DeviceContext context)
         {
             _context = context;
-            _register = register;
+            
             
         }
 
         // GET: api/DevicesController
         [EnableCors("AllowedSpecificOrigins")]
         [HttpGet]
-        public List<Device> GetDevices()
+        public IEnumerable<Device> GetDevices()
         {
             //FOR TESTING ONLY
             //return  TestData.allDevices;
             //Will return from a real database connection
             return _context.Devices.ToList();
+
+            //want to return result here as a json obj to solve front-end issues
+            //var listOfDevices = JsonResult(_context.Devices);
+
+            //return listOfDevices.ToList().;
         }
 
         // GET: api/DevicesControllerEF/5

@@ -1,5 +1,4 @@
 bin/
 obj/
 Migrations/
-back-end.Tests/
 .vs/
