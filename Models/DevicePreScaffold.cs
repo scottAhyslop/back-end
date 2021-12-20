@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace back_end.Models
 {
-    public class Device
+   /*  public class Device
     {
         private int _deviceId;
         //DeviceId incrementer holder value
@@ -43,13 +43,13 @@ namespace back_end.Models
             {
                 //assuming the temp of the Device is being tracked and updated by the tick...
                 Temperature = this.Temperature;
-            }
+            } */
             //These fields will be chosen by the user in AddDevice
             //Drop-down menus in forms that will show icons co-relating to the OSs and Devices chosen
             //The icons, devices, and OSs currently can be populated into dictionaries by methods found DeviceOSIcon
             /* DeviceIconPath = deviceIconPath;
             DeviceOSIconPath = deviceOSIconPath; */
-            DeviceOS = deviceOS;
+          /*   DeviceOS = deviceOS;
             DeviceType = deviceType;
             DeviceOSIcon newDeviceOSIcon = new DeviceOSIcon(deviceIconPath.ToString(), deviceOSIconPath.ToString());
             
@@ -58,8 +58,8 @@ namespace back_end.Models
             if (DeviceStatus==null)
             {
                 DeviceStatus="Unknown";
-            }
-        }
+            } */
+       /*  }
 
        
         public string DeviceName { get; set; }
@@ -73,10 +73,10 @@ namespace back_end.Models
         public Dictionary<string, List<string>> DeviceIconPath = new Dictionary<string, List<string>>();
         public Dictionary<string, List<string>> DeviceOSIconPath = new Dictionary<string, List<string>>();
 
-        
+         
         
 
-    }
+    }*/
         
 
 }
