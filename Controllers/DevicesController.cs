@@ -15,9 +15,9 @@ namespace back_end.Controllers
     [ApiController]
     public class DevicesController : ControllerBase
     {
-        private readonly BackEndContext _context;
+        private readonly DeviceContext _context;
 
-        public DevicesController(BackEndContext context)
+        public DevicesController(DeviceContext context)
         {
             _context = context;
         }
@@ -25,12 +25,12 @@ namespace back_end.Controllers
         // GET: api/DevicesController
         [EnableCors("AllowedSpecificOrigins")]
         [HttpGet]
-        public  async Task<IActionResult> GetDevices()
+        public List<Device> GetDevices()
         {
             //FOR TESTING ONLY
             //return  TestData.allDevices;
             //Will return from a real database connection
-           return (IActionResult)await _context.Devices.ToListAsync();
+            return _context.Devices.ToList();
         }
 
         // GET: api/DevicesControllerEF/5

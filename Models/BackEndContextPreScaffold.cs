@@ -2,11 +2,90 @@
 
 namespace back_end.Models
 {
-    public class BackEndContext: DbContext
+    public class DeviceContext: DbContext
     {
-        public BackEndContext(DbContextOptions<BackEndContext> options): base(options)
-        {}
-        public DbSet<Device> Devices { get; set; }
+        //blank constructor
+        public DeviceContext()
+        {
+        }
 
+        public DeviceContext(DbContextOptions<DeviceContext> options): base(options)
+        {}
+        public virtual DbSet<Device> Devices { get; set; }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder options)
+        {
+           
+
+                options.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Integrated Security=True;");
+           
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.HasAnnotation("Relational:Collation", "SQL_Latin1_General_CP1_CI_AS");
+
+            modelBuilder.Entity<Device>(entity =>
+            {
+                entity.Property(e => e.DeviceIconPath)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.DeviceName)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.DeviceOs)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("DeviceOS");
+
+                entity.Property(e => e.DeviceOsiconPath)
+                    .HasMaxLength(50)
+                    .IsUnicode(false)
+                    .HasColumnName("DeviceOSIconPath");
+
+                entity.Property(e => e.DeviceStatus)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.DeviceType)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Temperature)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.TimeInUse)
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
+            });
+        }
     }
+
+    /*
+     public partial class DeviceContext : DbContext
+    {
+    public DeviceContext()
+    {
+    }
+
+    public DeviceContext(DbContextOptions<DeviceContext> options)
+        : base(options)
+    {
+    }
+    public virtual DbSet<Device> Devices { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if (!optionsBuilder.IsConfigured)
+        {
+
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Integrated Security=True;");
+        }
+    }
+     */
+
+
 }
