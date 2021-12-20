@@ -16,10 +16,13 @@ namespace back_end.Controllers
     public class DevicesController : ControllerBase
     {
         private readonly DeviceContext _context;
+        private readonly WebApiConfigForCors _register;
 
-        public DevicesController(DeviceContext context)
+        public DevicesController(DeviceContext context, WebApiConfigForCors register)
         {
             _context = context;
+            _register = register;
+            
         }
 
         // GET: api/DevicesController

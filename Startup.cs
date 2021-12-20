@@ -50,7 +50,8 @@ namespace back_end
                     {
                         builder.WithOrigins(
                             "http://localhost:4200"
-                           ).AllowAnyHeader()
+                           ).AllowAnyOrigin()
+                           .AllowAnyHeader()
                            .AllowAnyMethod();
                     });
 
