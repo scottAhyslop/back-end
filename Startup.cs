@@ -31,24 +31,26 @@ namespace back_end
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //Enable CORS
-            services.AddCors(options =>
-           {
-               options.AddPolicy(name: AllowedSpecificOrigins,
-                   builder =>
-                   {
-                       builder.WithOrigins(
-                           "http://localhost:4200"
-                           );
-                   });
-
-           });
-           
             //JSON Serializer
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
-            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
-                .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
-                = new DefaultContractResolver());
+            //options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore)
+            //    .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
+            //    = new DefaultContractResolver());
+
+            //Enable CORS
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: AllowedSpecificOrigins,
+                    builder =>
+                    {
+                        builder.WithOrigins(
+                            "http://localhost:4200"
+                           ).AllowAnyHeader()
+                           .AllowAnyMethod();
+                    });
+
+            }));
+
 
             services.AddAuthentication();
             services.AddRouting();

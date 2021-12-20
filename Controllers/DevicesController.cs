@@ -6,10 +6,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using back_end.Models;
+using back_end.Data;
+using Microsoft.AspNetCore.Cors;
 
 namespace back_end.Controllers
 {
-    [Route("api/Devices")]
+    [Route("api/[controller]")]
     [ApiController]
     public class DevicesController : ControllerBase
     {
@@ -21,15 +23,20 @@ namespace back_end.Controllers
         }
 
         // GET: api/DevicesController
+        [EnableCors("AllowedSpecificOrigins")]
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Device>>> GetDevices()
+        public List<Device> GetDevices()
         {
-            return await _context.Devices.ToListAsync();
+            //FOR TESTING ONLY
+            return  TestData.allDevices;
+            //Will return from a real database connection
+           //return await _context.Devices.ToListAsync();
         }
 
         // GET: api/DevicesControllerEF/5
+        [EnableCors("AllowedSpecificOrigins")]
         [HttpGet("{id}")]
-        public async Task<ActionResult<Device>> GetDevice(int id)
+        public async Task<IActionResult> GetDevice(int id)
         {
             var device = await _context.Devices.FindAsync(id);
 
@@ -38,13 +45,13 @@ namespace back_end.Controllers
                 return NotFound();
             }
 
-            return device;
+            return (IActionResult)(Device)device;
         }
 
         // PUT: api/DevicesControllerEF/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutDevice(int id, Device device)
+        public async Task<IActionResult> PutDeviceAsync(int id, Device device)
         {
             if (id != device.DeviceId)
             {
@@ -68,12 +75,12 @@ namespace back_end.Controllers
                     throw;
                 }
             }
-
             return NoContent();
         }
 
         // POST: api/DevicesControllerEF
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
+        [EnableCors("AllowedSpecificOrigins")]
         [HttpPost]
         public async Task<ActionResult<Device>> PostDevice(Device device)
         {
