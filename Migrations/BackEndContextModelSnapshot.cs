@@ -8,7 +8,7 @@ using back_end.Models;
 
 namespace back_end.Migrations
 {
-    [DbContext(typeof(BackEndContext))]
+    [DbContext(typeof(DeviceContext))]
     partial class BackEndContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

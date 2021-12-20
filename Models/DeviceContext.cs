@@ -15,6 +15,7 @@ namespace back_end.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
+            //fallback if db connection fails, remove for production
             options.UseSqlServer("Data Source=(localdb)\\mssqllocaldb;Integrated Security=True;");        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

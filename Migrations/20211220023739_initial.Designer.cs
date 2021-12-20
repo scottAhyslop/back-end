@@ -9,7 +9,7 @@ using back_end.Models;
 
 namespace back_end.Migrations
 {
-    [DbContext(typeof(BackEndContext))]
+    [DbContext(typeof(DeviceContext))]
     [Migration("20211220023739_initial")]
     partial class initial
     {

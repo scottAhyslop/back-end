@@ -33,7 +33,10 @@ namespace back_end.Controllers
             //FOR TESTING ONLY
             //return  TestData.allDevices;
             //Will return from a real database connection
-            return _context.Devices.ToList();
+
+            var devices = _context.Devices.ToList();
+
+            return devices;
 
             //want to return result here as a json obj to solve front-end issues
             //var listOfDevices = JsonResult(_context.Devices);
@@ -44,7 +47,8 @@ namespace back_end.Controllers
         // GET: api/DevicesControllerEF/5
         [EnableCors("AllowedSpecificOrigins")]
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetDevice(int id)
+        
+        public async Task<IActionResult> GetDevice(int deviceId)
         {
             var device = await _context.Devices.FindAsync(id);
 
