@@ -25,12 +25,12 @@ namespace back_end.Controllers
         // GET: api/DevicesController
         [EnableCors("AllowedSpecificOrigins")]
         [HttpGet]
-        public List<Device> GetDevices()
+        public  async Task<IActionResult> GetDevices()
         {
             //FOR TESTING ONLY
-            return  TestData.allDevices;
+            //return  TestData.allDevices;
             //Will return from a real database connection
-           //return await _context.Devices.ToListAsync();
+           return (IActionResult)await _context.Devices.ToListAsync();
         }
 
         // GET: api/DevicesControllerEF/5
