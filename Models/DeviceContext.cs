@@ -32,12 +32,12 @@ namespace back_end.Models
                     .HasMaxLength(50)
                     .IsUnicode(false);
 
-                entity.Property(e => e.DeviceOs)
+                entity.Property(e => e.DeviceOS)
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("DeviceOS");
 
-                entity.Property(e => e.DeviceOsiconPath)
+                entity.Property(e => e.DeviceOSIconPath)
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("DeviceOSIconPath");

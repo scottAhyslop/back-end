@@ -26,8 +26,6 @@ namespace back_end
             Configuration = configuration;
         }
 
-       
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -61,7 +59,8 @@ namespace back_end
             services.AddAuthentication();
             services.AddRouting();
             services.AddControllers();
-            services.AddMvcCore();
+            //to solve Post / Put problems
+            services.AddMvcCore(options => options.SuppressAsyncSuffixInActionNames = false);
 
            }
 
