@@ -9,6 +9,7 @@ using back_end.Models;
 
 using Microsoft.AspNetCore.Cors;
 using System.Net;
+using back_end.Classes;
 
 namespace back_end.Controllers
 {
@@ -18,46 +19,91 @@ namespace back_end.Controllers
     {
         private readonly DeviceContext _context;
        
+        //dbContext
         public DevicesController(DeviceContext context)
         {
             _context = context;
-            
-            
         }
 
         // GET: api/DevicesController
         [EnableCors("AllowedSpecificOrigins")]
         [HttpGet]
-        public IEnumerable<Device> GetDevices()
+        public async Task<IActionResult> GetDevices([FromQuery] DeviceSearchParams  deviceSearchParams)
         {
             //FOR TESTING ONLY
             //return  TestData.allDevices;
+
+            //makes sure page>0., else page falls out of range and errors out
+            if (deviceSearchParams.Page<=0)
+            {
+                deviceSearchParams.Page = 1;
+            }
+
             //Will return from a real database connection
+            IQueryable<Device> devices = _context.Devices;
 
-            var devices = _context.Devices.ToList();
+            //set LINQ search params based on DeviceName, DeviceOs, DeviceType
+            if ((deviceSearchParams.DeviceName != null) || (deviceSearchParams.DeviceOS !=null) || (deviceSearchParams.DeviceType != null))
+            {
+               var selectedDevices = from value in 
+                   (from device in devices
+                    orderby device.DeviceName descending
+                    select new { DeviceName = device.DeviceName, DeviceOS = device.DeviceOs, DeviceType = device.DeviceOs})
+                    group value by value.DeviceName into dg
+                    select dg.First();
+                    
+            }//end LINQ statement
 
-            return devices;
+            //Search by SearchTerm
+            if (!string.IsNullOrEmpty(deviceSearchParams.SearchTerm))
+            {
+                devices = devices.Where(d => d.DeviceName.ToLower().Contains(deviceSearchParams.SearchTerm.ToLower()) || d.DeviceName.ToLower().Contains(deviceSearchParams.SearchTerm.ToLower()));
+            }
 
-            //want to return result here as a json obj to solve front-end issues
-            //var listOfDevices = JsonResult(_context.Devices);
 
-            //return listOfDevices.ToList().;
+            //Search by Name
+            if (!string.IsNullOrEmpty(deviceSearchParams.DeviceName))
+            {
+                //by DeviceId
+                //devices = devices.Where(d => d.DeviceId == deviceSearchParams.DeviceId);
+
+                //By DeviceName
+                devices = devices.Where(d =>d.DeviceName == deviceSearchParams.DeviceName);
+
+            }
+
+            //SortBy options using IQueryableExtensions
+            if (!string.IsNullOrEmpty(deviceSearchParams.SortBy))
+            {
+                devices = devices.OrderByCustom(deviceSearchParams.SortBy, deviceSearchParams.SortOrder);
+            }
+
+            //for item and pagination
+            devices = devices
+                .Skip(deviceSearchParams.Size*(deviceSearchParams.Page - 1))
+                .Take(deviceSearchParams.Size);
+
+            return Ok(await devices.ToListAsync());
+
+            //JsonResult 
+            //return new JsonResult(devices);
+
         }
 
         // GET: api/DevicesControllerEF/5
-        [EnableCors("AllowedSpecificOrigins")]
-        [HttpGet("{id}")]
+        [EnableCors("AllowedSpecificOrigins")]//FOR TESTING ONLY, remove for production
+        [HttpGet, Route("{id:int}")]
         
         public async Task<IActionResult> GetDevice(int deviceId)
         {
-            var device = await _context.Devices.FindAsync(id);
+            var device = await _context.Devices.FindAsync(deviceId);
 
             if (device == null)
             {
                 return NotFound();
             }
 
-            return (IActionResult)(Device)device;
+            return Ok(device);
         }
 
         // PUT: api/DevicesControllerEF/5
