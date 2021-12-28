@@ -15,6 +15,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using back_end.Models;
+using Microsoft.Extensions.Options;
+using Swashbuckle.AspNetCore.SwaggerGen;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using back_end.Classes;
 
 namespace back_end
 {
@@ -59,10 +63,25 @@ namespace back_end
             services.AddAuthentication();
             services.AddRouting();
             services.AddControllers();
-            //to solve Post / Put problems
+            //to solve Post / Put problems in Postman testing, can be removed in post once it's alive on the server proper 
             services.AddMvcCore(options => options.SuppressAsyncSuffixInActionNames = false);
 
-           }
+            services.AddApiVersioning(options => {
+                options.ReportApiVersions = true;
+                options.DefaultApiVersion = new ApiVersion(1,0);
+                options.AssumeDefaultVersionWhenUnspecified = true;
+                options.ApiVersionReader = new HeaderApiVersionReader("X-API-Version");
+            });
+            services.AddVersionedApiExplorer(
+                options => options.GroupNameFormat = "'v'VVV"); 
+            services.AddTransient<IConfigureOptions<SwaggerGenOptions>>();
+
+            services.AddSwaggerGen(options =>
+           {
+               options.OperationFilter<SwaggerDefaultValues>();
+           });
+
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -102,6 +121,17 @@ namespace back_end
                 endpoints.MapGet("/echo2",
                     context => context.Response.WriteAsync("echo2"));
             });
+
+            /* app.UseSwagger();
+            app.UseSwaggerUI(options => {
+                foreach (var description in provider.ApiVersionDescriptions)
+                {
+                    options.SwaggerEndpoint(
+                        $"/swagger/{description.GroupName}/swagger.json",
+                        description.GroupName.ToUpperInvariant()
+                    );
+                }
+            }); */
         }
     }
 }

@@ -90,7 +90,7 @@ namespace back_end.Controllers
             //return new JsonResult(devices);
 
         }
-
+        //end GetDevices
 
         // GET: api/DevicesControllerEF/5
         [EnableCors("AllowedSpecificOrigins")]//FOR TESTING ONLY, remove for production
@@ -109,7 +109,7 @@ namespace back_end.Controllers
         }
 
         // PUT: api/DevicesControllerEF/5
-
+        //update device with int id from Route, Device from form
         [HttpPut("{id}")]
         public async Task<IActionResult> PutDeviceAsync([FromRoute] int id, [FromBody] Device device)
         {
@@ -137,9 +137,10 @@ namespace back_end.Controllers
             }
             return NoContent();
         }
+        //end PutDeviceAsync
 
         // POST: api/DevicesControllerEF
-
+        //Add device from Body form
         [EnableCors("AllowedSpecificOrigins")]//FOR TESTING ONLY, remove for production
         [HttpPost]
         public async Task<ActionResult<Device>> PostDevice([FromBody] Device device)
@@ -159,8 +160,10 @@ namespace back_end.Controllers
 
             return CreatedAtAction(nameof(Device), new { id = updatedDevice.DeviceId }, updatedDevice);
         }
+        //end PostDevice
 
         // DELETE: api/DevicesControllerEF/5
+        //delete device with an int passed in as param        
         [HttpDelete("{id}")]
         public async Task<ActionResult<Device>> DeleteDevice(int id)
         {
@@ -175,8 +178,10 @@ namespace back_end.Controllers
 
             return device;
         }
-
+        //end DeleteDevice
+        
         // DELETE: api/DevicesControllerEF/5
+        //delete many devices from an array of DeviceIds
         [HttpPost]
         [Route("Delete")]
         public async Task<IActionResult> DeleteManyDevices([FromQuery] int[] DeviceIds)
@@ -196,10 +201,14 @@ namespace back_end.Controllers
             await _context.SaveChangesAsync();
             return Ok(devices);           
         }
+        //end DeleteManyDevices
 
+        //check to see if device exists first, before doing anything
         private bool DeviceExists(int id)
         {
             return _context.Devices.Any(e => e.DeviceId == id);
         }
-    }
-}
+        //end DeviceExistsDeviceExists
+
+    }//end DevicesController (IActionResult)
+}//end namespace
