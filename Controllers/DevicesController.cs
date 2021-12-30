@@ -10,10 +10,12 @@ using back_end.Models;
 using Microsoft.AspNetCore.Cors;
 using System.Net;
 using back_end.Classes;
+using Microsoft.AspNetCore.Authorization;
 
 namespace back_end.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class DevicesController : ControllerBase
     {

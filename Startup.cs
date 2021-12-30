@@ -47,7 +47,18 @@ namespace back_end
             //Enable CORS
             services.AddCors(options =>
             {
-                options.AddPolicy(name: AllowedSpecificOrigins,
+
+                options.AddDefaultPolicy(
+                    builder => {
+                        //Angular front-end (default) origin point with ng serve --ssl true enabled
+                        builder.WithOrigins("https://localhost:4200")
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                    }
+                );
+
+                //for a specific named policy 
+                /* options.AddPolicy(name: AllowedSpecificOrigins,
                     builder =>
                     {
                         builder.WithOrigins(
@@ -56,30 +67,49 @@ namespace back_end
                            .AllowAnyHeader()
                            .AllowAnyMethod();
                     });
-
+ */
             });
 
 
             services.AddAuthentication();
             services.AddRouting();
             services.AddControllers();
-            //to solve Post / Put problems in Postman testing, can be removed in post once it's alive on the server proper 
-            services.AddMvcCore(options => options.SuppressAsyncSuffixInActionNames = false);
 
             services.AddApiVersioning(options => {
                 options.ReportApiVersions = true;
-                options.DefaultApiVersion = new ApiVersion(1,0);
+                options.DefaultApiVersion = new ApiVersion(1, 0);
                 options.AssumeDefaultVersionWhenUnspecified = true;
                 options.ApiVersionReader = new HeaderApiVersionReader("X-API-Version");
             });
             services.AddVersionedApiExplorer(
-                options => options.GroupNameFormat = "'v'VVV"); 
-            services.AddTransient<IConfigureOptions<SwaggerGenOptions>>();
+                options => options.GroupNameFormat = "'v'VVV");
 
-            services.AddSwaggerGen(options =>
-           {
-               options.OperationFilter<SwaggerDefaultValues>();
-           });
+            services.AddAuthentication("Bearer")
+                .AddJwtBearer("Bearer", options =>
+                {
+                    options.Authority = "http://localhost:51959";
+                    options.RequireHttpsMetadata = false;
+
+                    options.Audience = "1Valet-api";
+
+                    options.TokenValidationParameters = new Microsoft.IdentityModel.Tokens.TokenValidationParameters
+                    {
+                        ValidateAudience = false
+                    };
+                })
+                ;
+
+
+            //to solve Post / Put problems in Postman testing, can be removed in post once it's alive on the server proper 
+            services.AddMvcCore(options => options.SuppressAsyncSuffixInActionNames = false);
+
+          
+            //services.AddTransient<IConfigureOptions<SwaggerGenOptions>>();
+
+           // services.AddSwaggerGen(options =>
+           //{
+           //    options.OperationFilter<SwaggerDefaultValues>();
+           //});
 
         }
 
@@ -91,7 +121,11 @@ namespace back_end
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseHttpsRedirection();
+            //forces server to only accept https from client, esssentially kicking itno a high-security mode
+            app.UseHsts();
+            
+            //standard re-direct back to https
+            //app.UseHttpsRedirection();
 
             app.UseStaticFiles(new StaticFileOptions
             {
@@ -104,9 +138,12 @@ namespace back_end
             //Enable CORS
             app.UseCors();
 
+            //for IdentityServer
+            app.UseAuthentication();
+
             app.UseAuthorization();
 
-            app.UseAuthentication();
+            
 
             app.UseEndpoints(endpoints =>
             {
@@ -122,7 +159,8 @@ namespace back_end
                     context => context.Response.WriteAsync("echo2"));
             });
 
-            /* app.UseSwagger();
+           
+ /* app.UseSwagger();
             app.UseSwaggerUI(options => {
                 foreach (var description in provider.ApiVersionDescriptions)
                 {
@@ -131,7 +169,6 @@ namespace back_end
                         description.GroupName.ToUpperInvariant()
                     );
                 }
-            }); */
-        }
+            }); */        }
     }
 }

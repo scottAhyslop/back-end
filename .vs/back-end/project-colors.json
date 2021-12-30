@@ -15,7 +15,17 @@
       "ProjectGuid": "f0337110-3e68-4075-9b07-7d0c24872886",
       "DisplayName": "back-end.Tests",
       "ColorIndex": 1
+    },
+    "8d677a08-e874-43a8-a6b8-f3f251599a2d": {
+      "ProjectGuid": "8d677a08-e874-43a8-a6b8-f3f251599a2d",
+      "DisplayName": "back-end.IdentityServer",
+      "ColorIndex": 2
+    },
+    "d971994b-af30-42ee-9f32-d8ae6d72e5a5": {
+      "ProjectGuid": "d971994b-af30-42ee-9f32-d8ae6d72e5a5",
+      "DisplayName": "back-end.IdentityServer",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }
